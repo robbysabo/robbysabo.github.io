@@ -1,0 +1,64 @@
+/* Robert Sabo 4/1/2022 */
+
+@font-face {
+	font-family: 'QuickSand';
+	src: url(../fonts/Quicksand-Regular.otf);
+}
+
+body {
+	background-color: #B8D1EB;
+	color: #000000;
+	font-family: 'Times New Roman', Times, serif;
+}
+
+main {
+	clear: both;
+	background-color: #C5A98B;
+	padding: 10px;
+}
+
+main ul {
+	list-style-image: url('../images/tomato.png');
+}
+
+h1 {
+	font-family: 'Righteous', cursive;
+	font-size: 4em;
+}
+
+h2 {
+	font-family: 'QuickSand', cursive, serif;
+	font-weight: normal;
+	font-style: italic;
+}
+
+#outerwrapper {
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+} 
+
+.floatleft { 
+	float: left;
+	margin-right: 3%;
+}
+
+.floatright {
+	float: right;
+	margin-left: 3%;
+}
+
+nav ul li{
+	list-style-type: none;
+}
+
+footer { 
+	font-size: 0.75em;
+	text-align: center;
+	clear: both;
+	background-color: #a17e49;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+
