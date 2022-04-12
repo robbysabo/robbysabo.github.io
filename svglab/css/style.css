@@ -1,0 +1,8 @@
+.shape {
+    transition: all .75s;
+}
+
+svg:hover .shape {
+    fill: crimson;
+    transform: scale(.9);
+}
