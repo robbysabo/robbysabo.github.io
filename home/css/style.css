@@ -1,0 +1,296 @@
+/* Robert Sabo 4/6/2022 */
+
+@font-face {
+    font-family: NES;
+    src: url('../fonts/NES.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: TimesNewPixel;
+    src: url('../fonts/TimesNewPixel.ttf') format('truetype');
+}
+
+body {
+    background-color: rgb(8, 8, 8);
+    margin: 0;
+    padding: 0;
+    font-size: 2rem;
+    color: #0da424;
+    font-family: TimesNewPixel, 'Times New Roman', Times, serif;
+    font-weight: normal;
+}
+
+#container {
+    width: 75%;
+    margin: auto;
+}
+
+h1 {
+    font-family: NES, monospace, serif;
+    font-size: 4rem;
+    font-weight: normal;
+    font-style: normal;
+}
+
+h2 {
+    font-family: NES, monospace, serif;
+    font-size: 3rem;
+    font-weight: normal;
+    font-style: normal;
+}
+
+p {
+    font-size: 2rem;
+    color: #0da424;
+}
+
+/* Nav */
+
+nav {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+    background-color: #333;
+    font-family: 'Chakra Petch', monospace, sans-serif;
+    font-size: 1.25rem;
+    font-weight: normal;
+    text-align: center;
+    width: 100%;
+}
+
+nav a {
+    width: 10%;
+    color: white;
+    text-decoration: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 2px;
+    white-space: nowrap;
+}
+
+nav a:hover:not(#logo) {
+    font-weight: bold;
+    background-color: #ddd;
+    color: black;
+}
+
+.wide {
+    width: 100%;
+}
+
+.active {
+    background-color: #0da424;
+}
+
+#logo {
+    width: 10%;
+    padding: 0;
+}
+
+/* Main */
+main {
+    margin: auto;
+    padding-top: 30px;
+    text-align: center;
+    width: 75%;
+}
+
+#boldtoday {
+    font-weight: bolder;
+}
+
+.smalltext {
+    font-size: 1rem;
+}
+
+/* Form tag */
+form {
+    margin-bottom: 10px;
+    padding-bottom: 55px;
+}
+
+input[type=text],
+textarea {
+    width: 100%;
+    padding: 6px 10px;
+    margin: 4px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid #0da424;
+    background-color: transparent;
+    color: #0da424;
+    font-family: TimesNewPixel, 'Times New Roman', Times, serif;
+    font-size: inherit;
+    outline: none;
+    resize: vertical;
+}
+
+input[type=text]:focus {
+    background-color: #0da424;
+    color: rgb(8, 8, 8);
+}
+
+input[type=text]::placeholder,
+textarea::placeholder {
+    color: #0da42480;
+}
+
+.select_container {
+    padding: 20px;
+    width: 100%;
+}
+
+select {
+    font-family: TimesNewPixel, 'Times New Roman', Times, serif;
+    font-size: 1.25rem;
+    color: #0da424;
+    background-color: rgb(8, 8, 8);
+    border-color: #0da424;
+    padding: 5px 0;
+}
+
+fieldset {
+    margin: 20px 0;
+    border-color: #0da424;
+}
+
+legend {
+    background-color: #0da424;
+    color: rgb(8, 8, 8);
+}
+
+/* Custom Radio */
+.lineup {
+    float: left;
+    margin: auto;
+    width: 33%;
+}
+
+.radiolabel {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    margin: 0 10px 0 0;
+}
+
+.radioinput {
+    display: none;
+}
+
+.customradio {
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 2px solid #0da424;
+    border-radius: 50%;
+    margin-right: 10px;
+    box-sizing: border-box;
+    padding: 4px;
+}
+
+.customradio::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: #0da424;
+    border-radius: 50%;
+
+    transform: scale(0);
+    transition: transform 0.15s;
+}
+
+.radioinput:checked+.customradio::after {
+    transform: scale(1);
+}
+
+form p {
+    display: inline;
+    float: left;
+    margin: 10px 0;
+    padding: 0;
+}
+
+textarea[name=comment] {
+    height: 200px;
+    border: 2px solid #0da424;
+
+}
+
+input[type=submit] {
+    background-color: #0da424;
+    color: rgb(8, 8, 8);
+    border-color: transparent;
+    border-radius: 4px;
+    padding: 8px 16px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: TimesNewPixel, 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    float: right;
+}
+
+input[type=submit]:hover {
+    border-color: #0da424;
+    background-color: rgb(8, 8, 8);
+    color: #0da424;
+}
+
+.labelfloat {
+    float: left;
+}
+
+/* Footer */
+
+footer {
+    width: 100%;
+}
+
+footer div.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: #333;
+    font-size: 1.5em;
+    text-align: center;
+    width: 100%;
+}
+
+footer div a {
+    width: 10%;
+    color: white;
+    text-decoration: none;
+    font-family: monospace;
+}
+
+.shrink {
+    padding: 10px;
+    margin: 0;
+    width: 5%;
+}
+
+/* Table */
+table {
+    margin: auto;
+    padding: 10px;
+}
+
+th,
+td {
+    padding: 10px;
+    border: 2px solid #0da424;
+}
+
+th {
+    font-size: 2.5rem;
+}
+
+/* span */
+#boldtext {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
