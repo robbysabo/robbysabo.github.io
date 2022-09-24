@@ -1,0 +1,52 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.acc-head {
+    color: #0da424;
+    border: 1px solid #0da424;
+    background-color: #1e1e1e;
+}
+
+.acc-body {
+    border: 1px solid #0da424;
+    background-color: #2e2e2e;
+}
+
+.button_panel {
+    height: 125px;
+    padding: 50px 15px;
+    float: left;
+}
+
+.button_panel img {
+    width: 32px;
+    height: 32px;
+}
+
+#display_panel {
+    height: 300px;
+    width: 300px;
+    overflow: hidden;
+    float: left;
+}
+
+#image_list {
+    left: 0px;
+    position: relative;
+    width: 900px;
+    list-style: none;
+}
+
+#image_list li {
+    float: left;
+    width: 300px;
+}
+
+#image_list li img {
+    width: 295px;
+
+}

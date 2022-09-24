@@ -1,0 +1,177 @@
+/*********************************************************************
+
+*Original Author: Robert Sabo
+*Date Created: 09/07/2022
+*Version: 1.1
+*Date Last Modified: 09/09/2022
+*Modified by: Robert Sabo
+*Modification log:
+
+        Verison 1.0 - 09/09/2022 -  Made Mod Log.
+        Verison 1.1 - 09/21/2022 -  Fix the content scroll. Adjusted the body padding to fit the computer screen.
+                                    Added home-group-content for 
+
+******************************************************************** */
+
+/* Custom Fonts */
+@font-face {
+    font-family: NES;
+    src: url('../fonts/NES.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: TimesNewPixel;
+    src: url('../fonts/TimesNewPixel.ttf') format('truetype');
+}
+
+/* General settings */
+
+* {
+    font-family: TimesNewPixel, 'Times New Roman', Times, serif;
+    font-size: 1.15em;
+    color: #0da424;
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+/* Body and background settings */
+
+html,
+body {
+    background-color: #101010;
+    box-sizing: border-box;
+    height: 100%;
+    padding: 32px 32px 24px 32px;
+    margin: 0;
+
+}
+
+#bg-img {
+    background-image: url('../images/scanlines.png');
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+}
+
+.stretch {
+    width: 100%;
+    height: 100%;
+}
+
+/* Main content */
+
+.container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 50px auto 50px;
+    grid-template-areas:
+        "m h h h h h h h h h h h"
+        "m c c c c c c c c c c c"
+        "m f f f f f f f f f f f";
+}
+
+.header {
+    grid-area: h;
+    font-family: NES, sans-serif;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+.menu {
+    grid-area: m;
+}
+
+.menu>ul {
+    list-style: none;
+    margin: auto 0.25em;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+.menu>ul>li {
+    float: left;
+    padding: 0.25em 0;
+}
+
+.menu>ul>li>a {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    grid-area: c;
+    overflow-y: scroll;
+}
+
+.footer {
+    grid-area: f;
+    text-align: center;
+}
+
+/* Index / Home */
+.home-group-content {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.home-group-content>img {
+    width: 50%;
+}
+
+.home-group-content>p {
+    text-align: center;
+    width: 50%;
+}
+
+/* Hide Scrollbar */
+.tiny-text {
+    float: left;
+    font-size: 0.75em;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 0px transparent;
+    border-radius: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 0px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: transparent;
+}
