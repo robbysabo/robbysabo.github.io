@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!-- 
+*Original Author: Robert Sabo
+*Date Created: 09/07/2022
+*Version: 1.0
+*Date Last Modified: 09/09/2022
+*Modified by: Robert Sabo
+*Modification log:
+
+        Verison 1.0 - 09/09/2022 - Made Mod Log.
+        Verison 1.1 - 10/01/2022 - Added jQueryUI accordion plugin. Added cycle2 plugin for the carousel.
+        Verison 1.2 - 10/13/2022 - Edited text content to fit website.
+-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Robert Sabo Fake Arcade">
+    <meta name="keywords" content="html css javascript full stack programing programmer freelance">
+    <meta name="author" content="Robert Sabo">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/faqstyles.css">
+
+
+    <title>Fake Arcade</title>
+</head>
+
+<body>
+    <div id="bg-img">
+        <img src="images/monitarbackground.png" alt="monitar background image" class="stretch" unselectable="on">
+    </div>
+    <div class="container">
+        <div class="header">F.A.Q.</div>
+        <div class="menu tiny-text">
+            <ul>
+                <li><a href="index.html"><img src="images/homeicon.png">Home</a></li>
+                <li><a href="pizza.html"><img src="images/pizzaicon.png">Pizza</a></li>
+                <li><a href="arcade.html"><img src="images/arcadeicon.png">Arcade</a></li>
+                <li><a href="faq.html"><img src="images/faqicon.png">F.A.Q.</a></li>
+                <li><a href="contact.html"><img src="images/contacticon.png">Contact</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div id="accordion">
+                <h3 class="acc-head">How many arcades do you have?</h3>
+                <div class="acc-body">
+                    <p>Check out all the arcades we have</p>
+                    <!-- Slide show here, click through the photos -->
+                    <div class="carousel-container">
+                        <div><a href="#" id="prev"><img src="images/arrow-left.png"></a></div>
+                        <div class="cycle-slideshow" data-cycle-timeout="0" data-cycle-prev="#prev" data-cycle-next="#next">
+                            <img src="images/classic_arcades.jpg">
+                            <img src="images/pinball.jpg">
+                            <img src="images/shooters.jpg">
+                        </div>
+                        <div><a href="#" id="next"><img src="images/arrow-right.png"></a></div>
+                    </div>
+                </div>
+                <h3 class="acc-head">How many pizza toppings</h3>
+                <div class="acc-body">
+                    <p>There are 13 toppings!</p>
+                    <p>Pepperoni, Chicken, Beef, Bacon, Ham, Sausage.</p>
+                    <p>Mushrooms, Onions, Pineapples, Tomatoes, Olives, Bell Peppers, Jalapeno Peppers.</p>
+                </div>
+                <h3 class="acc-head">Where is <i>fake</i> arcade?</h3>
+                <div class="acc-body">
+                    <p>No where. It's <i>fake</i>.</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://malsup.github.io/min/jquery.cycle2.min.js"></script>
+    <script src="js/lib/jquery-ui.min.js"></script>
+    <!-- My script -->
+    <script src="js/index.js"></script>
+</body>
+
+</html>

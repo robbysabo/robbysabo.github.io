@@ -1,0 +1,21 @@
+.arcade-group {
+    display: flex;
+}
+
+.arcade-group>div {
+    width: 50%;
+}
+
+.arcade-group>div>h2 {
+    font-family: NES, sans-serif;
+    font-size: 2em;
+}
+
+.arcade-list {
+    padding-left: 1em;
+}
+
+.arcade-img {
+    width: 100%;
+    height: auto;
+}

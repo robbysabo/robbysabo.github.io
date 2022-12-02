@@ -1,0 +1,22 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    font-size: 0.9em;
+    padding: 2em;
+}
+
+.space-between {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5em 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.black-text {
+    color: #101010;
+}

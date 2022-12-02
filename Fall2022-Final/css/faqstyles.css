@@ -1,0 +1,27 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+
+.acc-head {
+    color: #0da424;
+    border: 1px solid #0da424;
+    background-color: #1e1e1e;
+}
+
+.acc-body {
+    border: 1px solid #0da424;
+    background-color: #2e2e2e;
+}
+
+.slider-img {
+    height: 600px;
+    width: 600px;
+}
+
+.carousel-container {
+    display: flex;
+    align-items: center;
+}

@@ -1,0 +1,64 @@
+/*********************************************************************
+
+*Original Author: Robert Sabo
+*Date Created: 09/07/2022
+*Version: 1.0
+*Date Last Modified: 09/09/2022
+*Modified by: Robert Sabo
+*Modification log:
+
+        Verison 1.0 - 10/01/2022 -  Created file. Made Mod Log. Styling for pizza menu.
+
+******************************************************************** */
+
+.menu {
+    padding: 2em 1em;
+}
+
+.item {
+    border-bottom: 1px dotted #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+span {
+    margin-bottom: -4px;
+    padding: 4px;
+    color: #fff;
+    font-size: .75em;
+}
+
+.list-title {
+    font-family: NES, sans-serif;
+    color: #0da424;
+    margin-bottom: 32px;
+    font-size: 1.5em;
+}
+
+.list {
+    margin-bottom: 32px;
+}
+
+li {
+    margin: 0.5em 0 0 0;
+}
+
+/* Media query */
+@media only screen and (min-width:992px) {
+    .menu {
+        padding: 2em 1em;
+        columns: 100px 2;
+        column-gap: 32px;
+    }
+}
+
+@media only screen and (max-width:768px) {
+
+    .list-title {
+        font-size: 0.9em;
+    }
+
+    span {
+        font-size: .35em;
+    }
+}

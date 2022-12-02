@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!-- 
+*Original Author: Robert Sabo
+*Date Created: 09/07/2022
+*Version: 1.1
+*Date Last Modified: 10/01/2022
+*Modified by: Robert Sabo
+*Modification log:
+
+        Verison 1.0 - 09/09/2022 - Made Mod Log.
+        Verison 1.1 - 10/01/2022 - Fixed the style of contect. Add contactstyle.css for styling.
+-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Robert Sabo Fake Arcade">
+    <meta name="keywords" content="html css javascript full stack programing programmer freelance">
+    <meta name="author" content="Robert Sabo">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/contactstyle.css">
+
+    <title>Fake Arcade</title>
+</head>
+
+<body>
+    <div id="bg-img">
+        <img src="images/monitarbackground.png" alt="monitar background image" class="stretch" unselectable="on">
+    </div>
+    <div class="container">
+        <div class="header">Contact</div>
+        <div class="menu tiny-text">
+            <ul>
+                <li><a href="index.html"><img src="images/homeicon.png">Home</a></li>
+                <li><a href="pizza.html"><img src="images/pizzaicon.png">Pizza</a></li>
+                <li><a href="arcade.html"><img src="images/arcadeicon.png">Arcade</a></li>
+                <li><a href="faq.html"><img src="images/faqicon.png">F.A.Q.</a></li>
+                <li><a href="contact.html"><img src="images/contacticon.png">Contact</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <form id="email_form" name="email_form" method="get">
+                <div class="space-between">
+                    <label for="email_1">Email Address:</label>
+                    <input type="text" id="email_1" name="email_1" class="black-text">
+                </div>
+
+                <div class="space-between">
+                    <label for="email_2">Confirm Email Address:</label>
+                    <input type="text" id="email_2" name="email_2" class="black-text">
+                </div>
+
+                <div class="space-between">
+                    <label for="first_name">First Name:</label>
+                    <input type="text" id="first_name" name="first_name" class="black-text">
+                </div>
+
+                <div class="space-between">
+                    <label for="comment">Comment:</label>
+                    <textarea name="comment" id="comment" class="black-text"></textarea>
+                </div>
+
+                <div class="space-between">
+                    <label>&nbsp;</label>
+                    <input type="button" id="clear_form" value="Clear Form">
+                    <input type="button" id="join_list" value="Join List">
+                </div>
+            </form>
+        </div>
+        <div class="footer">
+        </div>
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>
