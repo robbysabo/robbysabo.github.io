@@ -1,0 +1,40 @@
+/*********************************************************************
+*
+*Original Author: Robert Sabo
+*Date Created: 11/18/2022
+*Version: 0.1
+*Date Last Modified: 12/5/2022
+*Modified by: Robert Sabo
+*Modification log: 
+*           
+*           Verison 0.0 - Mod Log and created file. Reset html and body tags.
+*           Verison 0.1 - Styled the body to have a background image.
+*
+**********************************************************************/
+* {
+  font-family: "Cabin", sans-serif;
+}
+
+html:has(#app),
+body:has(#app) {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.75)
+    ),
+    url("../static/tavern-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: "Cabin", sans-serif;
+  color: #cecece;
+}
+
+.pacifico {
+  font-family: "Pacifico", cursive;
+}
