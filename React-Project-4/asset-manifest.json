@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.9f7d9315.css",
+    "main.js": "/static/js/main.8b496a20.js",
+    "static/js/787.924567e0.chunk.js": "/static/js/787.924567e0.chunk.js",
+    "static/media/musical-background-rahu-pixabay.jpg": "/static/media/musical-background-rahu-pixabay.86f16539a97486c9aa33.jpg",
+    "index.html": "/index.html",
+    "main.9f7d9315.css.map": "/static/css/main.9f7d9315.css.map",
+    "main.8b496a20.js.map": "/static/js/main.8b496a20.js.map",
+    "787.924567e0.chunk.js.map": "/static/js/787.924567e0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9f7d9315.css",
+    "static/js/main.8b496a20.js"
+  ]
+}
